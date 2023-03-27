@@ -6,33 +6,34 @@
    <script>
       // create a new Web3 object using the MetaMask provider
 const web3 = new Web3(window.ethereum);
-function connect() {
-   // request access to the user's MetaMask account
-   window.ethereum.request({ method: 'eth_requestAccounts' })
-     .then(() => {
-       console.log('Connected to MetaMask!');
-     })
-     .catch((error) => {
-       console.error(error);
-     });
+async function connect() {
+   try {
+      // request access to the user's MetaMask account
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      console.log('Connected to MetaMask!');
+   } catch (error) {
+      console.error(error);
+   }
 }
 // request access to the user's MetaMask account
-window.ethereum.request({ method: 'eth_requestAccounts' })
-  .then(() => {
-    console.log('Connected to MetaMask!');
-  })
-  .catch((error) => {
+async function ethRequest() {
+  try {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    console.log(accounts);
+  } catch (error) {
     console.error(error);
-  });
+  }
+}
 
 // interact with the Ethereum blockchain using the Web3 object
-web3.eth.getAccounts()
-  .then((accounts) => {
-    console.log('Current account:', accounts[0]);
-  })
-  .catch((error) => {
+async function getAccounts() {
+  try {
+    const accounts = await web3.eth.getAccounts();
+    console.log('Accounts:', accounts);
+  } catch (error) {
     console.error(error);
-  });
+  }
+}
 
    </script>   
 </head>
