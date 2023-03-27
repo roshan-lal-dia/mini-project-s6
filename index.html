@@ -38,10 +38,90 @@ async function getAccounts() {
 getAccounts();
 
    </script>   
+   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+   </style>
 </head>
 <body>
-	<button onclick="connect()">Connect</button>
-	<p></p>
+    <div class="container">
+      <form class="login-form">
+        <h2>Web3 Login</h2>
+        <div class="input-group">
+          <label for="network">Network:</label>
+          <select id="network" name="network">
+            <option value="ganache">Ganache Local Blockchain</option>
+            <option value="mainnet">Mainnet</option>
+          </select>
+        </div>
+        <button type="submit" onclick="connect()">Connect</button>
+      </form>
+    </div>
 </body>
 </html>
 
