@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+   <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+   <script>
+      // create a new Web3 object using the MetaMask provider
+const web3 = new Web3(window.ethereum);
+async function connect() {
+   try {
+      // request access to the user's MetaMask account
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      console.log('Connected to MetaMask!');
+   } catch (error) {
+      console.error(error);
+   }
+}
+// request access to the user's MetaMask account
+async function ethRequest() {
+  try {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    console.log(accounts);
+  } catch (error) {
+    console.error(error);
+  }
+}
+ethRequest();
+
+// interact with the Ethereum blockchain using the Web3 object
+async function getAccounts() {
+  try {
+    const accounts = await web3.eth.getAccounts();
+    console.log('Accounts:', accounts);
+  } catch (error) {
+    console.error(error);
+  }
+}
+getAccounts();
+
+   </script>   
+</head>
+<body>
+	<button onclick="connect()">Connect</button>
+	<p></p>
+</body>
+</html>
+
+
+
