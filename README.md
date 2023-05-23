@@ -1,5 +1,5 @@
 
-## SET UP INSTRUCTIONS
+## SET UP INSTRUCTIONS  --Detailed Instructions Soon
 
 Open ganache and select quick start ethereum.
 
