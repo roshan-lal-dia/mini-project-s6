@@ -1,0 +1,22 @@
+{
+  "name": "dia-vote",
+  "version": "1.0.0",
+  "description": "blockchain-voting-system",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "lite-server --port 3001",
+    "build": "truffle build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roshan Lal Dia, Dhusny Raj, Aani Moncy, Jincy",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "truffle": "^5.7.9"
+  }
+}
