@@ -34,3 +34,7 @@ truffle migrate --reset (Every time you open Ganache)
 npm start
 
 The project will open in the browser and metamask will ask you to select an account. Select the account we had imported earlier.
+
+
+### danson added a new code 
+
