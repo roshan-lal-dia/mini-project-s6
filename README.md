@@ -1,7 +1,7 @@
 
 ## SET UP INSTRUCTIONS
 ### Project demo video link
-Open ganache and select quick start ethereum.
+Open ganache and select *quick* start ethereum.
 
 Open your browser and configure metamask. Create a wallet and store your```Secret Recovery Phrase``` in a safe place.
 
