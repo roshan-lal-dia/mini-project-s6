@@ -1,7 +1,7 @@
 # Important!
 Consensys Announces the Sunset of Truffle and Ganache and New Hardhat Partnership | Consensys https://share.google/JWgO59hvo6Qb9bi27
 
-The project was built with truffle and it no longer exists, so the project is stale 
+The project was built with Truffle and it is no longer maintained, so the project is stale 
 
 
 ## SET UP INSTRUCTIONS
