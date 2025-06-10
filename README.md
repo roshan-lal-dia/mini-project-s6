@@ -1,3 +1,7 @@
+# Important!
+[Consensys announcement on Truffle/Ganache sunset](https://share.google/JWgO59hvo6Qb9bi27)
+The project was built with Truffle and it is no longer maintained, so the project is stale 
+
 
 ## SET UP INSTRUCTIONS
 ### Project demo video link
